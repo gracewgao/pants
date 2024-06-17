@@ -7,7 +7,10 @@ import { BEIGE, BROWN } from "./const/const";
 
 const GlobalStyle = createGlobalStyle`
   body{ 
-    font-family: 'Bricolage Grotesque'; 
+    font-family: "Playwrite US Trad";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     background-color: ${BEIGE};
     color: ${BROWN};
     height: 100%;
@@ -82,7 +85,7 @@ function App() {
         <PantsManWrapper>
           <PantsMan legs={legs} />
         </PantsManWrapper>
-        <PantsMsg>{`${legs}-legged fellow`}</PantsMsg>
+        <PantsMsg>{`${legs}-legged pants`}</PantsMsg>
         <Slider legs={legs} handleSliderChange={handleSliderChange} />
       </Background>
     </>
